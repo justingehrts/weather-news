@@ -1,0 +1,22 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - dashboard-data:/app/data
+    environment:
+      - DB_PATH=/app/data/weather_dashboard.db
+    restart: unless-stopped
+
+  scheduler:
+    build: .
+    command: ["python", "scheduler.py"]
+    volumes:
+      - dashboard-data:/app/data
+    environment:
+      - DB_PATH=/app/data/weather_dashboard.db
+    restart: unless-stopped
+
+volumes:
+  dashboard-data:
