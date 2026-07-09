@@ -63,9 +63,6 @@ def init_db():
 SEED_SOURCES = [
     # Official government sources — these are stable, high-confidence feeds.
     ("NOAA (all news)", "https://www.noaa.gov/rss.xml", "official"),
-    ("National Hurricane Center - Atlantic", "https://www.nhc.noaa.gov/index-at.xml", "official"),
-    ("National Hurricane Center - E. Pacific", "https://www.nhc.noaa.gov/index-ep.xml", "official"),
-    ("Storm Prediction Center - Outlooks", "https://www.spc.noaa.gov/products/spcrss.xml", "official"),
 
     # Fox Weather — confirmed official RSS program (moxie.foxweather.com).
     ("Fox Weather - Latest Headlines", "https://moxie.foxweather.com/google-publisher/latest.xml", "major"),
