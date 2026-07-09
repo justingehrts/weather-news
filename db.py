@@ -72,7 +72,7 @@ SEED_SOURCES = [
     # Verify these once deployed — smaller sites change feed paths more often.
     ("Tropical Tidbits (Levi Cowan)", "https://www.tropicaltidbits.com/blog/feed", "blog"),
     ("Watts Up With That", "https://wattsupwiththat.com/feed/", "blog"),
-    ("AMS Weather, Climate, and Society","https://journals.ametsoc.org/journalissuetocrss/journals/wcas/wcas-overview.xml",blog),
+    ("AMS Weather, Climate, and Society","https://journals.ametsoc.org/journalissuetocrss/journals/wcas/wcas-overview.xml","blog"),
 ]
 
 
